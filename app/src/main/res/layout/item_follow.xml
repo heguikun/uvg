@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_82"
+    android:background="@color/white">
+
+    <!--侧滑出来的取消关注-->
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="@dimen/dp_87"
+        android:layout_height="match_parent"
+        android:background="@color/color_e62e2e"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消关注"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/dp_52"
+            android:layout_height="@dimen/dp_52"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toEndOf="@id/iv_head"
+            android:text="魅力达人"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_head"
+            android:layout_alignParentEnd="true"
+            android:text="10"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/sp_13"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_number"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_4"
+            android:text="上新"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/sp_12"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/xx_icon_gd" />
+
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>

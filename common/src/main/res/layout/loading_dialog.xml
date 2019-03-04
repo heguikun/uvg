@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_loading_dialog"
+    android:gravity="center"
+    android:minWidth="@dimen/dp_100"
+    android:minHeight="@dimen/dp_100"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/app_color"
+        app:indicatorName="BallClipRotateMultipleIndicator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="@string/loading"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/sp_16" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

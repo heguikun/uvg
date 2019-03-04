@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+    <!--物流信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/white"
+        android:padding="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/iv_news_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xx_xxzy_jywl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_11"
+            android:layout_toEndOf="@id/iv_news_one"
+            android:text="交易物流"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_news_one"
+            android:layout_marginStart="@dimen/dp_11"
+            android:layout_toEndOf="@id/iv_news_one"
+            android:text="暂无数据"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginStart="@dimen/dp_12"
+        android:background="@color/color_f1f1f1" />
+
+    <!--通知消息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/iv_news_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xx_xxzy_tzxx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_11"
+            android:layout_toEndOf="@id/iv_news_two"
+            android:text="通知消息"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_news_two"
+            android:layout_marginStart="@dimen/dp_11"
+            android:layout_toEndOf="@id/iv_news_two"
+            android:text="暂无数据"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginStart="@dimen/dp_12"
+        android:background="@color/color_f1f1f1" />
+
+
+    <!--新的好友-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/iv_news_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xx_xxzy_xdhy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_11"
+            android:layout_toEndOf="@id/iv_news_three"
+            android:text="新的好友"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_news_three"
+            android:layout_marginStart="@dimen/dp_11"
+            android:layout_toEndOf="@id/iv_news_three"
+            android:text="暂无数据"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

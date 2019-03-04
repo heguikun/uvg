@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#478DF0</color>
+    <color name="colorPrimaryDark">#478DF0</color>
+    <color name="colorAccent">#478DF0</color>
+
+    <color name="app_color">#478DF0</color>
+
+    <color name="color_f1f1f1">#F1F1F1</color>
+    <color name="color_0B60D7">#0B60D7</color>
+    <color name="color_f04747">#F04747</color>
+    <color name="color_ed0f3c">#ED0F3C</color>
+    <color name="color_fefefe">#FEFEFE</color>
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_5868a2">#5868a2</color>
+    <color name="color_1a1a1a">#1a1a1a</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_cccccc">#cccccc</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_fffefe">#FFFEFE</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_191919">#191919</color>
+    <color name="color_d7d7d7">#d7d7d7</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_0069fe">#0069fe</color>
+    <color name="color_4d4d4d">#4d4d4d</color>
+    <color name="color_ff0034">#ff0034</color>
+    <color name="color_ffff00">#ffff00</color>
+    <color name="color_00cf0d">#00cf0d</color>
+    <color name="color_b7b7b7">#b7b7b7</color>
+    <color name="color_e62e2e">#e62e2e</color>
+    <color name="color_39white">#65ffffff</color>
+    <color name="color_f33833">#f33833</color>
+
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+
+    <color name="praise_item">#8290AF</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_35black">#53000000</color>
+    <color name="color_20white">#51FFFFFF</color>
+</resources>

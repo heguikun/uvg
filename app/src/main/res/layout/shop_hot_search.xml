@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_color"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingBottom="@dimen/dp_10">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:text="热搜 :"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_12" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_hot_search_one"
+        style="@style/TextViewHotSearchStyle"
+        android:text="好皮大衣" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_hot_search_two"
+        style="@style/TextViewHotSearchStyle"
+        android:text="海蓝之谜" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_hot_search_three"
+        style="@style/TextViewHotSearchStyle"
+        android:text="雅思兰黛" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_hot_search_four"
+        style="@style/TextViewHotSearchStyle"
+        android:text="精华面膜" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

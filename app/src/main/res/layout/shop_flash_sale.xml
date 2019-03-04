@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_flash_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableStart="@drawable/sy_icon_shoptt_1"
+        android:drawablePadding="@dimen/dp_4"
+        android:text="限时抢购"
+        android:textColor="@color/color_1a1a1a"
+        android:textSize="@dimen/sp_13"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_toEndOf="@id/tv_flash_sale"
+        android:background="@drawable/shape_shop_flash_sale"
+        android:padding="@dimen/dp_3"
+        android:text="13"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_10" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_colon_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_toEndOf="@id/tv_hour"
+        android:text=":"
+        android:textColor="@color/color_f33833"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_toEndOf="@id/tv_colon_1"
+        android:background="@drawable/shape_shop_flash_sale"
+        android:padding="@dimen/dp_3"
+        android:text="01"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_10" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_colon_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_toEndOf="@id/tv_minute"
+        android:text=":"
+        android:textColor="@color/color_f33833"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_toEndOf="@id/tv_colon_2"
+        android:background="@drawable/shape_shop_flash_sale"
+        android:padding="@dimen/dp_3"
+        android:text="59"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_10" />
+
+</RelativeLayout>

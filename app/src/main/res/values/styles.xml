@@ -1,0 +1,155 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--欢迎页样式-->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+
+    <!--商城热搜样式-->
+    <style name="TextViewHotSearchStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/dp_10</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/shape_hot_search</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_2</item>
+        <item name="android:paddingBottom">@dimen/dp_2</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <!--商城十宫格样式-->
+    <style name="ShopTenTextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/dp_5</item>
+        <item name="android:textColor">@color/color_666666</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--淘友圈评论-->
+    <style name="comment_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- 显示对话框时当前的屏幕是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--我的管理样式-->
+    <style name="MineAdminStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_21</item>
+        <item name="android:paddingBottom">@dimen/dp_21</item>
+    </style>
+
+    <!--我的布局样式-->
+    <style name="MineRlStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:paddingTop">@dimen/dp_11</item>
+        <item name="android:paddingBottom">@dimen/dp_11</item>
+    </style>
+
+    <!--我的文本样式-->
+    <style name="MineTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">@dimen/dp_20</item>
+        <item name="android:drawablePadding">@dimen/dp_14</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <!--我的右箭头图片样式-->
+    <style name="MineImageViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">@dimen/dp_15</item>
+        <item name="android:src">@drawable/icon_into</item>
+    </style>
+
+    <!--我的view视图样式-->
+    <style name="MineViewStyle">
+        <item name="android:layout_width">@dimen/dp_54</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+        <item name="android:background">@color/color_white</item>
+    </style>
+
+    <!--我的更换信息布局样式-->
+    <style name="MineRlInfoStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_50</item>
+        <item name="android:layout_marginTop">@dimen/dp_1</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingStart">@dimen/dp_10</item>
+        <item name="android:paddingEnd">@dimen/dp_10</item>
+    </style>
+
+    <!--我的文本信息样式-->
+    <style name="MineTextViewInfoStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <!--我的文本选择样式-->
+    <style name="MineTextViewChoiceStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawableEnd">@drawable/icon_into</item>
+        <item name="android:drawablePadding">@dimen/dp_7</item>
+        <item name="android:textColorHint">@color/color_b7b7b7</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:hint">请选择</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <!--我的标题信息-->
+    <style name="MineTextViewTitleInfoStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:textColor">@color/color_cccccc</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+</resources>

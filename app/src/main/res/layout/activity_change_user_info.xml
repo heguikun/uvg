@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical"
+    tools:context=".ui.user.ChangeUserInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的管理"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/MineTextViewTitleInfoStyle"
+                android:text="个人信息" />
+
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_78"
+                android:background="@color/white"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_into" />
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/dp_55"
+                    android:layout_height="@dimen/dp_55"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_7"
+                    android:layout_toStartOf="@id/iv_arrow"
+                    android:src="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_user_name"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="用户名" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sex"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="性别" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="常住地" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_date_of_birth"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="出生年月" />
+
+                <TextView
+                    android:id="@+id/tv_date_of_birth"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_occupation"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="职业" />
+
+                <TextView
+                    android:id="@+id/tv_occupation"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_constellation"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="星座" />
+
+                <TextView
+                    android:id="@+id/tv_constellation"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_height"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="身高" />
+
+                <TextView
+                    android:id="@+id/tv_height"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_weight"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="体重" />
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_emotional_state"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="情感状态" />
+
+                <TextView
+                    android:id="@+id/tv_emotional_state"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MineTextViewTitleInfoStyle"
+                android:text="实名认证" />
+
+            <RelativeLayout
+                android:id="@+id/rl_real_name"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="真实姓名" />
+
+                <TextView
+                    android:id="@+id/tv_real_name"
+                    style="@style/MineTextViewChoiceStyle"
+                    android:hint="未认证" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_id_card"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="身份证（实名认证）" />
+
+                <TextView
+                    android:id="@+id/tv_id_card"
+                    style="@style/MineTextViewChoiceStyle"
+                    android:hint="未认证" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="手机（验证）" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/MineTextViewChoiceStyle"
+                    android:hint="未认证" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MineTextViewTitleInfoStyle"
+                android:text="其他" />
+
+            <RelativeLayout
+                android:id="@+id/rl_o2"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="O2" />
+
+                <TextView
+                    android:id="@+id/tv_o2"
+                    style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_receiving_address"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="收货地址" />
+
+                <TextView style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_unsubscribe"
+                style="@style/MineRlInfoStyle">
+
+                <TextView
+                    style="@style/MineTextViewInfoStyle"
+                    android:text="注销账户" />
+
+                <TextView style="@style/MineTextViewChoiceStyle" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/dp_11"
+    android:paddingEnd="@dimen/dp_19">
+
+    <TextView
+        android:id="@+id/tv_live_date_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_28"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_live_date_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_6"
+        android:text="12月"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_live_photo"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_live_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="生活"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_live_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="共9张"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

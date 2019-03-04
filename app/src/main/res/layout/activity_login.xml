@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.uvgouapp.ui.other.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_login_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:background="@drawable/login_btn_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableStart="@drawable/login_wx"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_18"
+            android:text="微信登录"
+            android:textColor="@color/color_00cf0d"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

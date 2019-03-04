@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_285"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_14"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_show_address_bg"
+        android:drawableStart="@drawable/shou_icon_position"
+        android:drawablePadding="@dimen/dp_5"
+        android:padding="@dimen/dp_5"
+        android:text="广州市白云区0.38km"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="你超可爱(* haha *)"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:maxLines="2"
+            android:text="秋冬宝宝帽子加厚护耳婴幼儿百搭兔耳朵毛绒帽子男女童...¥132"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_15"
+            android:background="@drawable/shape_show_purchase"
+            android:gravity="center"
+            android:text="购买"
+            android:textColor="@color/color_0B60D7"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:text="帽子很可爱,带上暖暖的,不会掉也不会遮眼睛,也不会吃到嘴巴里,很喜欢,推荐给朋友了,自己买了一顶换着带,推荐给朋友,哈哈哈帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱帽子很可爱"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_13" />
+
+    </ScrollView>
+
+</LinearLayout>

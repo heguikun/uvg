@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_18"
+        android:paddingBottom="@dimen/dp_20">
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_wx"
+            android:drawablePadding="@dimen/dp_9"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/tv_friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_pyq"
+            android:drawablePadding="@dimen/dp_9"
+            android:gravity="center"
+            android:text="朋友圈"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_11" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_microblog"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/icon_wb"-->
+            <!--android:drawablePadding="@dimen/dp_9"-->
+            <!--android:gravity="center"-->
+            <!--android:text="微博"-->
+            <!--android:textColor="@color/color_666666"-->
+            <!--android:textSize="@dimen/sp_11" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_qq"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/icon_qq"-->
+            <!--android:drawablePadding="@dimen/dp_9"-->
+            <!--android:gravity="center"-->
+            <!--android:text="QQ"-->
+            <!--android:textColor="@color/color_666666"-->
+            <!--android:textSize="@dimen/sp_11" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_qqzone"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/icon_kj"-->
+            <!--android:drawablePadding="@dimen/dp_9"-->
+            <!--android:gravity="center"-->
+            <!--android:text="QQ空间"-->
+            <!--android:textColor="@color/color_666666"-->
+            <!--android:textSize="@dimen/sp_11" />-->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_f1f1f1" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

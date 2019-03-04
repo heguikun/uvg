@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.uvgouapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--微信支付权限-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- android 9.0上使用前台服务，需要添加权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".application.UWEApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- android:largeHeap="true" -->
+        <meta-data
+            android:name="com.uvgouapp.common.util.GlideAppModuleConfig"
+            android:value="AppGlideModule" />
+        <!-- 刘海屏适配 -->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <!-- 高德配置 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/map_key" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!--友盟多渠道打包-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@string/um_key" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- android:theme="@style/SplashTheme" -->
+        <!--微信支付-->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="@string/weixin_api_key" />
+            </intent-filter>
+        </activity>
+
+        <!-- 欢迎页 -->
+        <activity
+            android:name=".ui.other.SplashActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 首页 -->
+        <activity
+            android:name=".home.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 登录 -->
+        <activity
+            android:name=".ui.other.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- X5WebView服务 -->
+        <service
+            android:name=".common.service.PreloadX5Service"
+            android:exported="false" />
+        <!-- 分享生活 -->
+        <activity
+            android:name=".ui.circle.ShareLiveActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--发布商品 -->
+        <activity
+            android:name=".ui.circle.ReleaseShopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 发布成功 -->
+        <activity
+            android:name=".ui.circle.ReleaseSuccessActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 申请店铺 -->
+        <activity
+            android:name=".ui.user.ApplyStoreActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 入驻申请协议 -->
+        <activity
+            android:name=".ui.user.EnterAgreementActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 完成 -->
+        <activity
+            android:name=".ui.user.CompleteActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 查看淘友圈信息 -->
+        <activity
+            android:name=".ui.circle.CircleInformationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 秀场在线 -->
+        <activity
+            android:name=".ui.show.ShowOnlineActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 秀场火箭置顶 -->
+        <activity
+            android:name=".ui.show.ShowRocketTopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 充值 -->
+        <activity
+            android:name=".ui.other.RechargeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 充值记录 -->
+        <activity
+            android:name=".ui.other.RechargeRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 发布秀场 -->
+        <activity
+            android:name=".ui.show.ShowReleaseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name=".ui.user.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 网页 -->
+        <activity
+            android:name=".ui.other.WebViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <!-- 更换用户信息 -->
+        <activity
+            android:name=".ui.user.ChangeUserInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 关注 -->
+        <activity
+            android:name=".ui.user.FollowActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--查看他人淘友圈-->
+        <activity
+            android:name=".ui.circle.CircleLookOtherInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--淘友圈详情-->
+        <activity
+            android:name=".ui.circle.CircleDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--品牌-->
+        <activity
+            android:name=".ui.other.BrandActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--选择类目-->
+        <activity
+            android:name=".ui.other.ChooseCategoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--商品规格-->
+        <activity
+            android:name=".ui.other.ShopSpecActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--我的邀请-->
+        <activity
+            android:name=".ui.user.MyInvitationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--用户修改信息-->
+        <activity
+            android:name=".ui.user.UserModifyInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--绑定手机号码-->
+        <activity
+            android:name=".ui.other.BindingPhoneNumberActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

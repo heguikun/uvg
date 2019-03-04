@@ -24,7 +24,7 @@ import butterknife.OnClick;
 /**
  * - @Author:  ying
  * - @Time:  2018/12/23
- * - @Description:  我的
+ * - @Description:  我 的
  */
 public class UserFragment extends BaseFragment<UserPresenter> implements UserContract.View {
 
